@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "daanKit": "Daan Kit",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+  "common": {
+    "brand": "MOKSH GANGA",
+    "tagline": "From Karma to Dharma",
+    "contactWhatsapp": "Contact on WhatsApp",
+    "exploreProducts": "Explore Products",
+    "callNow": "Call Now",
+    "sendEnquiry": "Send Enquiry",
+    "launchingSoon": "Launching Soon",
+    "availableNow": "Available Now",
+    "learnMore": "Learn More",
+    "language": "हिन्दी",
+    "languageLabel": "Switch to Hindi",
+    "productImage": "Product image placeholder",
+    "map": "Google Maps placeholder",
+    "gallery": "Gallery placeholder"
+  },
+  "home": {
+    "heroDescription": "Reviving the spirit of Daan, Jeev Seva and Sanatan values through meaningful products.",
+    "missionTitle": "Our Mission",
+    "mission": "Moksh Ganga is a purpose-driven, spiritually rooted venture dedicated to social welfare and inspired living. We help modern families reconnect with compassion, Daan, Jeev Seva and Sanatan Dharma through simple, meaningful products.",
+    "featuredTitle": "Featured Product",
+    "featuredHeading": "Daan Kit",
+    "featuredDescription": "Daan Kit is a spiritually inspired product created to help devotees perform meaningful acts of Jeev Seva and Daan. The current kit supports Chinti Aahar Daan and is prepared with vegetarian ingredients and traditional values.",
+    "whyTitle": "Why Moksh Ganga",
+    "launchingTitle": "Launching Soon",
+    "galleryTitle": "Moments of Seva",
+    "contactTitle": "Start Your Enquiry"
+  },
+  "why": [
+    {
+      "title": "Sanatan Inspired",
+      "text": "Rooted in timeless Indian traditions and daily spiritual discipline."
+    },
+    {
+      "title": "Social Welfare",
+      "text": "Designed to make compassionate action simple for families and devotees."
+    },
+    {
+      "title": "Pure & Natural",
+      "text": "Prepared with vegetarian ingredients and careful intention."
+    },
+    {
+      "title": "Meaningful Daan",
+      "text": "A gentle way to turn devotion into positive action."
+    }
+  ],
+  "about": {
+    "title": "Our Story",
+    "intro": "Moksh Ganga began with a simple belief: spiritual values become powerful when they are practiced with care in everyday life.",
+    "story": "From Haridwar, close to the sacred flow of Maa Ganga, we are building a modern social enterprise that helps people perform Daan and Jeev Seva with dignity, devotion and clarity. Our work is inspired by Sanatan Dharma, compassion and the shared responsibility of serving life around us.",
+    "visionTitle": "Vision",
+    "vision": "To become India’s trusted spiritual social enterprise for meaningful products that support Daan, Seva and inspired living.",
+    "missionTitle": "Mission",
+    "mission": "To reconnect modern society with compassion, Daan, Jeev Seva and Sanatan values through accessible, thoughtful products.",
+    "valuesTitle": "Values",
+    "values": ["Shraddha", "Compassion", "Purity", "Seva", "Trust", "Dharma"]
+  },
+  "products": {
+    "title": "Products",
+    "intro": "Simple, spiritually inspired products for devotees, families and social welfare supporters.",
+    "availableTitle": "Available Now",
+    "upcomingTitle": "Launching Soon"
+  },
+  "daanKit": {
+    "title": "Daan Kit",
+    "intro": "A simple and meaningful way to perform Jeev Seva and Daan.",
+    "whatTitle": "What is Daan Kit?",
+    "what": "Daan Kit is a thoughtfully prepared Chinti Aahar Daan kit made with vegetarian ingredients and guided by traditional values. It is created for devotees who want an easy, respectful way to practice Daan.",
+    "whyTitle": "Why Daan Matters",
+    "why": "Daan is an act of humility, gratitude and care. Through small acts of Jeev Seva, families can nurture compassion and connect daily life with Sanatan values.",
+    "useTitle": "How to Use",
+    "steps": ["Choose a clean and safe outdoor place.", "Offer a small quantity with prayerful intention.", "Repeat regularly as a simple practice of Seva."],
+    "faqTitle": "Frequently Asked Questions"
+  },
+  "testimonials": {
+    "title": "Devotee Voices",
+    "items": [
+      {
+        "name": "Priya Sharma",
+        "text": "A thoughtful concept for families who want to make Daan part of daily life."
+      },
+      {
+        "name": "Rahul Joshi",
+        "text": "The idea feels rooted, simple and very relevant for Haridwar devotees."
+      },
+      {
+        "name": "Meena Rawat",
+        "text": "Moksh Ganga brings spiritual practice into everyday compassion."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Is Daan Kit available now?",
+      "answer": "Yes. Daan Kit is available now for enquiries through WhatsApp and phone."
+    },
+    {
+      "question": "Is this an ecommerce website?",
+      "answer": "No. At this stage, Moksh Ganga accepts enquiries through WhatsApp, calls and the contact form."
+    },
+    {
+      "question": "Where is Moksh Ganga based?",
+      "answer": "Moksh Ganga is based in Haridwar, Uttarakhand, India."
+    }
+  ],
+  "form": {
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "message": "Message",
+    "submit": "Send Enquiry",
+    "placeholder": "I want to know more about Daan Kit..."
+  },
+  "footer": {
+    "mission": "Reviving the spirit of Daan, Jeev Seva and Sanatan values through meaningful products.",
+    "quickLinks": "Quick Links",
+    "social": "Social Links",
+    "contact": "Contact Info"
+  }
+}
