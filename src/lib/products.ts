@@ -4,14 +4,16 @@ export const upcomingProducts = [
     icon: "waves",
     english: "Matsya Aahar Daan",
     hindi: "मत्स्य आहार दान",
-    subtitle: "Food for Fish"
+    subtitle: "Food for Fish",
+    image: "/images/fish food.jpeg"
   },
   {
     key: "chinti",
     icon: "sparkles",
     english: "Chinti Aahar Daan",
     hindi: "चींटी आहार दान",
-    subtitle: "Food for Ants"
+    subtitle: "Food for Ants",
+    image: "/images/ant food.jpeg"
   },
   {
     key: "shwan",

@@ -30,8 +30,16 @@ export function ContactBlock({ dict, title }: { dict: any; title: string }) {
               <Phone className="mr-2 h-4 w-4" /> {dict.common.callNow}
             </ButtonLink>
           </div>
-          <div className="mt-8 flex min-h-48 items-center justify-center rounded-lg border border-dashed border-river-200 bg-river-50 text-sm font-bold text-river-800">
-            {dict.common.map}
+          <div className="mt-8 overflow-hidden rounded-3xl border border-river-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110621.83545272236!2d78.03352418113771!3d29.95262421674352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909470eb8ee57c9%3A0x4e449176a640f5f3!2sHaridwar%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1781635621833!5m2!1sen!2sin"
+              className="h-80 w-full"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Haridwar location"
+            />
           </div>
         </FadeUp>
         <FadeUp delay={0.1}>
