@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, HeartHandshake, Instagram, MessageCircle, Phone, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, HeartHandshake, Instagram, Leaf, MessageCircle, Phone, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import { ContactBlock } from "@/components/ContactBlock";
 import { DaanKitImage } from "@/components/DaanKitImage";
@@ -26,6 +26,24 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   const { lang: routeLang } = await params;
   const lang = (isLanguage(routeLang) ? routeLang : "en") as Language;
   const dict = getDictionary(lang);
+
+  const galleryItems = [
+    {
+      src: "/images/ram nam ki goli.jpeg",
+      alt: "Ram Nam Ki Goli Daan Kit image",
+      caption: "Ram Nam Ki Goli"
+    },
+    {
+      src: "/images/fish food.jpeg",
+      alt: "Matsya Aahar Daan image",
+      caption: "Matsya Aahar Daan"
+    },
+    {
+      src: "/images/ant food.jpeg",
+      alt: "Chinti Aahar Daan image",
+      caption: "Chinti Aahar Daan"
+    }
+  ];
 
   return (
     <PageShell lang={lang} dict={dict}>
@@ -122,18 +140,42 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <section className="section-pad bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <FadeUp>
+              <SectionHeading title={dict.daanKit.useTitle} text={dict.daanKit.why} center />
+            </FadeUp>
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              {dict.daanKit.steps.map((step: string, index: number) => (
+                <article key={step} className="rounded-3xl border border-saffron-100 bg-cream p-6 text-gray-700 shadow-sm transition hover:-translate-y-1 hover:shadow-glow">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron-100 text-saffron-700 text-lg font-black">
+                    {index + 1}
+                  </div>
+                  <p className="mt-4 font-semibold text-river-900">{step}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-pad bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <FadeUp>
               <SectionHeading title={dict.home.whyTitle} center />
             </FadeUp>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {dict.why.map((item: { title: string; text: string }, index: number) => (
-                <FadeUp key={item.title} delay={index * 0.06}>
-                  <article className="h-full rounded-lg border border-saffron-100 bg-cream p-6">
-                    <HeartHandshake className="h-8 w-8 text-saffron-600" />
-                    <h3 className="mt-5 text-xl font-black text-river-900">{item.title}</h3>
-                    <p className="mt-3 leading-7 text-gray-700">{item.text}</p>
-                  </article>
-                </FadeUp>
-              ))}
+              {dict.why.map((item: { title: string; text: string }, index: number) => {
+                const icons = [Sparkles, HeartHandshake, CheckCircle2, Leaf];
+                const Icon = icons[index] ?? Sparkles;
+                return (
+                  <FadeUp key={item.title} delay={index * 0.06}>
+                    <article className="h-full rounded-3xl border border-saffron-100 bg-cream p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-glow">
+                      <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron-100 text-saffron-700">
+                        <Icon className="h-6 w-6" />
+                      </div>
+                      <h3 className="mt-5 text-xl font-black text-river-900">{item.title}</h3>
+                      <p className="mt-3 leading-7 text-gray-700">{item.text}</p>
+                    </article>
+                  </FadeUp>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -158,9 +200,20 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               <SectionHeading title={dict.home.galleryTitle} center />
             </FadeUp>
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="flex aspect-[4/3] items-center justify-center rounded-lg border border-dashed border-river-200 bg-river-50 text-sm font-bold text-river-800">
-                  {dict.common.gallery}
+              {galleryItems.map((item) => (
+                <div key={item.src} className="overflow-hidden rounded-3xl border border-river-200 bg-white shadow-sm">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="border-t border-river-100 px-4 py-3 text-sm font-semibold text-river-900">
+                    {item.caption}
+                  </div>
                 </div>
               ))}
             </div>
