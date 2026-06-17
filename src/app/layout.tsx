@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
+      <head>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -66,6 +66,8 @@ fbq('track', 'PageView');`}
             alt=""
           />
         </noscript>
+      </head>
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
