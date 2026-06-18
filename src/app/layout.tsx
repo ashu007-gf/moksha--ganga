@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -69,6 +70,7 @@ fbq('track', 'PageView');`}
       </head>
       <body className="font-sans antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
